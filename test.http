@@ -1,2 +1,43 @@
-#
-GET http://localhost:3000/users/1
+# index
+GET http://localhost:3000/users
+###
+
+# create
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "id": "2",
+  "name": "Hai",
+  "age": "10"
+}
+###
+
+# get
+GET http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "id": "2",
+}
+###
+
+# update
+PUT http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "id": "2",
+  "name": "Ba",
+  "age": "3"
+}
+###
+
+# delete
+PUT http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "id": "2",
+}
+###
