@@ -1,0 +1,20 @@
+{
+   "extends": [
+      "prettier",
+      "plugin:node/recommended",
+      "eslint:recommended"
+    ],
+    "plugins": ["prettier", "node"],
+    "rules": {
+      "prettier/prettier":[
+         "warn",
+         {
+            "arrowParens": "avoid",
+            "endOfLine": "lf",
+            "tabWidth": 2,
+            "useTabs": false,
+            "printWidth": 120
+         }
+      ]
+    }
+}

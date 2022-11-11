@@ -11,9 +11,14 @@
     "pg": "^8.8.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
   },
   "scripts": {
-    "dev": "nodemon --delay 3 --watch src src/index.js"
+    "dev": "nodemon --delay 3 --watch src src/index.js",
+    "lint": "eslint --fix src",
+    "prettier": "prettier --check src"
   }
 }
